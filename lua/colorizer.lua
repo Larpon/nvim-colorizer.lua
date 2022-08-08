@@ -362,9 +362,9 @@ do
       return
     end
     local r, g, b, a, match_end =
-      line:sub(i):match "^rgba%(%s*(%d+%%?)%s*,%s*(%d+%%?)%s*,%s*(%d+%%?)%s*,%s*([.%d]+)%s*%)()"
+      line:sub(i):match "^rgba%(%s*(%d+%%?)%s*,%s*(%d+%%?)%s*,%s*(%d+%%?)%s*,%s*(%d+%%?)%s*%)()"
     if not match_end then
-      local r, g, b, a, match_end = line:sub(i):match "^rgba%(%s*(%d+%%?)%s+(%d+%%?)%s+(%d+%%?)%s+([.%d]+)%s*%)()"
+      local r, g, b, a, match_end = line:sub(i):match "^rgba%(%s*(%d+%%?)%s+(%d+%%?)%s+(%d+%%?)%s+(%d+%%?)%s*%)()"
       if not match_end then
         return
       end
